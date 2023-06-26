@@ -1,0 +1,67 @@
+.frame {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	padding: 10px;
+	pointer-events: none;
+	/*backdrop-filter: blur(2px);*/
+	color: antiquewhite;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	/*overflow-y: auto;
+	overflow-x: hidden;*/
+	text-align: center;
+}
+.logo
+{
+	pointer-events: auto;
+}
+a[href]
+{
+	pointer-events: auto;
+}
+.titre
+{
+	font-size: 25px;
+	text-decoration: underline;
+	pointer-events: auto;
+}
+.titre:hover
+{
+	transform: scale(1.1);
+}
+.soustitre
+{
+	font-size: 20px;
+	text-decoration: underline;
+}
+.centre
+{
+	text-align: center;
+}
+.gauche
+{
+	text-align: left;
+}
+.mail
+{
+	text-decoration: none;
+	color: antiquewhite;
+}
+.mail:hover
+{
+	text-decoration: underline;
+	color: gold;
+	font-size: large;
+}
+.logo:hover
+{
+	transform: scale(1.1);
+}
+body
+{
+	overflow-x: hidden;
+}

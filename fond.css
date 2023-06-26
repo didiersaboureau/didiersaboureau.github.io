@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body > section:nth-child(1) {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	background: #111;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	z-index: -1;
+}
+
+body > section:nth-child(1) .row {
+	position: relative;
+	top: -75%;
+	width: 100%;
+	display: flex;
+	padding: 10px 0;
+	white-space: nowrap;
+	font-size: 64px;
+	transform: rotate(-30deg);
+	user-select: none;
+}
+
+i {
+	color: rgba(0, 0, 0, 0.5);
+	text-shadow: 0 0 120px rgba(0, 0, 0, 0.5);
+	transition: 500ms;
+	padding: 0 5px;
+	user-select: none;
+	cursor: default;
+}
+body > section:nth-child(1) .row:nth-child(odd){
+	right: 150px;
+	top: calc(-75% - 13px);
+}
+@-moz-document url-prefix() {
+	body > section:nth-child(1) .row:nth-child(odd){
+		color: green;
+		top: calc(-75% - 37px);
+	}
+}
+body > section:nth-child(1) .row:nth-child(even){
+	right: -150px;
+}
+
+body > section:nth-child(1) .row:nth-child(odd) div:nth-child(1) {
+	animation: backward1 80s linear infinite;
+}
+
+body > section:nth-child(1) .row:nth-child(odd) div:nth-child(2) {
+	animation: backward2 80s linear infinite;
+	animation-delay: -40s;
+}
+
+body > section:nth-child(1) .row:nth-child(even) div:nth-child(1) {
+	animation: forward1 80s linear infinite;
+}
+
+body > section:nth-child(1) .row:nth-child(even) div:nth-child(2) {
+	animation: forward2 80s linear infinite;
+	animation-delay: -40s;
+}
+
+@keyframes backward1 {
+	0% {
+		transform:  translateX(100%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes backward2 {
+	0% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(-200%);
+	}
+}
+
+@keyframes forward1 {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes forward2 {
+	0% {
+		transform: translateX(-200%);
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
+}
