@@ -8,17 +8,28 @@ body {
 }
 
 nav {
-    background: #4776E6;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: linear-gradient(
+        45deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(226deg 100% 25%) 11%,
+        hsl(219deg 100% 29%) 22%,
+        hsl(214deg 100% 33%) 33%,
+        hsl(209deg 100% 36%) 44%,
+        hsl(205deg 100% 40%) 56%,
+        hsl(202deg 100% 43%) 67%,
+        hsl(198deg 100% 45%) 78%,
+        hsl(195deg 100% 48%) 89%,
+        hsl(192deg 100% 50%) 100%
+    );
     color: #fff;
-    padding: 10px;
+    padding: 20px 40px;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+	font-size: larger;
 }
 
 nav li {
@@ -33,9 +44,19 @@ nav a {
 }
 
 header {
-    background: #4776E6;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/*background-image: linear-gradient(
+        45deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(226deg 100% 25%) 11%,
+        hsl(219deg 100% 29%) 22%,
+        hsl(214deg 100% 33%) 33%,
+        hsl(209deg 100% 36%) 44%,
+        hsl(205deg 100% 40%) 56%,
+        hsl(202deg 100% 43%) 67%,
+        hsl(198deg 100% 45%) 78%,
+        hsl(195deg 100% 48%) 89%,
+        hsl(192deg 100% 50%) 100%
+    );*/
     color: #fff;
     text-align: center;
     #padding: 20px;
@@ -72,7 +93,7 @@ footer {
 #portrait {
 	display: flex;
 	justify-content: center;
-	min-height: 200px
+	min-height: 200px;
 }
 #tete {
 	border-radius: 10%;
@@ -88,12 +109,43 @@ footer {
 }
 
 
+#divlogo {
+	display: flex;
+	justify-content: center;
+	/*min-height: 200px;*/
+	padding: 30px 0 30px 0;
+}
+#logo {
+	border-radius: 10%;
+	-webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#logo:hover {
+	border : 2px solid #000000;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+
+
+#lil {
+  border: 2px solid blue;
+  padding: .5em;
+  width: 50%;
+  text-align: center;
+}
+
+#lul {
+  display: flex;
+  list-style: none;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 svg {
 	font-family: "Press Start 2P", sans-serif;
-	width: 100%; height: 75px;
+	width: 50%; height: 75px;
 }
 svg text {
 	animation: stroke 5s infinite alternate;
@@ -115,7 +167,6 @@ svg text {
 }
 
 .wrapper {
-	background: #4776E6;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-};
+	background-image: url("images/arrow.jpg");
+	background-size: cover;
+}
