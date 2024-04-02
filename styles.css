@@ -128,30 +128,40 @@ footer {
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
 
+#projects {
+	min-height: 600px;
+}
 
 #lil {
-  border: 2px solid blue;
-  padding: .5em;
-  width: 50%;
-  text-align: center;
+	border: 2px solid blue;
+	padding: .5em;
+	width: 50%;
+	text-align: center;
+	min-height: 400px;
 }
 
 #lul {
-  display: flex;
-  list-style: none;
+	display: flex;
+	list-style: none;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 svg {
-	font-family: "Press Start 2P", sans-serif;
-	width: 50%; height: 75px;
+	font-family: "Quicksand", sans-serif;
+	width: 100%; height: 75px;
 }
-svg text {
+#name {
 	animation: stroke 5s infinite alternate;
 	stroke-width: 2;
 	stroke: #FF00FE;
 	font-size: 40px;
+}
+#classe {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #FF00FE;
+	font-size: 30px;
 }
 @keyframes stroke {
 	0%   {
