@@ -180,3 +180,7 @@ svg {
 	background-image: url("images/arrow.jpg");
 	background-size: cover;
 }
+
+section {
+	backdrop-filter: brightness(1.5);
+}
