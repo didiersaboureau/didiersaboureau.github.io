@@ -133,7 +133,7 @@ footer {
 }
 
 #lil {
-	border: 2px solid blue;
+	border: 2px /*solid blue*/;
 	padding: .5em;
 	width: 50%;
 	text-align: center;
